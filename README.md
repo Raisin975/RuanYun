@@ -6,7 +6,7 @@
 
 - 目标网站：重庆市公共资源交易网 https://www.cqggzy.com/jyjg/005002/second-page-jyjg.html 
 
-- 抓取内容：**交易结果 **中的 **工程招投标 **中的 **中标结果公告** 中的各项 **中标结果** 的
+- 抓取内容：**交易结果** 中的 **工程招投标** 中的 **中标结果公告** 中的各项 **中标结果** 的
 
    > <img src="./1.png" style="zoom:50%" alt="图1">
 
@@ -28,10 +28,9 @@
 
 
 
-##踩坑介绍：
+## 踩坑介绍：
 
 ![:octocat:](https://github.githubassets.com/images/icons/emoji/octocat.png)**写在前面：本次的任务应该在Ubuntu上进行，但虚拟机太卡了，而且AMD的显卡死活装不了Ubuntu，所以我选择在PyCharm上用 requests 和 bs4 中的 BeautifulSoup 的搭配抓取网页数据。我踩了很多坑，但更多的是菜鸟的学习过程。**
-
 
 
 **以下**☀️
