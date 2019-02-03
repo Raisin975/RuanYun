@@ -7,11 +7,11 @@
 
 - 抓取内容：**交易结果** 中的 **工程招投标** 中的 **中标结果公告** 中的各项 **中标结果** 的
 
-   > <img src="./1.png" style="zoom:50%" alt="图1">
+   > <img src="./ScreenShort/1.png" style="zoom:50%" alt="图1">
 
    *项目名称* 、*日期*、*网址*  和 **网址中** 的 **表格中** 的（以下只是一个理想的例子，实际情况太踏🐴坑爹了）
 
-   <img src="./2.png" style="zoom:70%" alt="图1">
+   <img src="./ScreenShort/2.png" style="zoom:70%" alt="图2">
 
    *中标时间* （每个表格没有具体的中标时间，所以用刊登日期代替）
 
@@ -38,7 +38,7 @@
 
   *一个页面中至少有18个 tr 标签（因为一个页面显示18个项目），但最后 BeautifulSoup 解析出来的数据只有一个 tr 标签。*（如下面的框框所示）
 
-  <img src="./3.png" style="zoom:50%" alt="图2">
+  <img src="./ScreenShort/3.png" style="zoom:50%" alt="图3">
 
   至于为什么会丢失数据，有以下两个思路：
 
@@ -51,13 +51,13 @@
 
   里面贮存着所有项目的项目名称、链接、日期。
 
-  <img src="./4.png" style="zoom:50%" alt="图3">
+  <img src="./ScreenShort/4.png" style="zoom:50%" alt="图4">
 
   ​
 
   可以通过修改红框框里的数字进行所有 **链接等数据** 的提取。（大写的 😆
 
-  <img src="./5.png" style="zoom:50%" alt="图4">
+  <img src="./ScreenShort/5.png" style="zoom:50%" alt="图5">
 
   ​
 
@@ -68,7 +68,7 @@
 
   话不多说，上图。
 
-  <img src="./6.png" style="zoom:70%" alt="图5">
+  <img src="./ScreenShort/6.png" style="zoom:70%" alt="图6">
 
   ​
 
@@ -77,8 +77,7 @@
 
   出现两次数组越界，仅仅加了判断。
 
-  <img src="./7.png" alt="图6">
-
+  <img src="./ScreenShort/7.png" alt="图7">
 
 
 ***
@@ -89,9 +88,9 @@
 
 - 只对这两种表格进行了重点的处理：
 
-  <img src="./9.png" style="zoom:60%" alt="图7">
+  <img src="./ScreenShort/9.png" style="zoom:60%" alt="图8">
 
-  <img src="./8.png" style="zoom:60%" alt="图8">
+  <img src="./ScreenShort/8.png" style="zoom:60%" alt="图9">
 
 - 在对于每次测试时没爬到的数据也只是简单得添加了一些判断。其他爬不到的数据依旧爬不到。所以在爬后面的部分数据的时候，并不能做到适配。代码不具备普遍性。😰
 
